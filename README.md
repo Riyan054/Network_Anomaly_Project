@@ -74,19 +74,26 @@ Network_Anomaly_Project/
 
 ## How to Run
 
-```bash
-# Clone the repository
-git clone https://github.com/riyan054/Network_Anomaly_Project.git
-
-# Navigate to project
-cd Network_Anomaly_Project
-
-# Install dependencies
+Step 1 — Set up the virtual environment (first time only)
+bash:
+cd /Users/RIYAN/NETWORK_ANOMALY_PROJECT/Network_Anomaly_Project
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 
-# Run the project
-python main.py
-```
+Step 2 — Run the Packet Sniffer (requires sudo / root)
+Open Terminal 1 and run:
+bash:
+cd /Users/RIYAN/NETWORK_ANOMALY_PROJECT/Network_Anomaly_Project
+bash run_sniffer.sh
+
+Step 3 — Run the Streamlit Dashboard
+Open Terminal 2 and run:
+
+bash
+cd /Users/RIYAN/NETWORK_ANOMALY_PROJECT/Network_Anomaly_Project
+source venv/bin/activate
+streamlit run dashboard.py
 
 ---
 
